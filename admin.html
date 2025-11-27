@@ -9,7 +9,9 @@
       if (document.getElementById('pass').value === 'lazaro2025') {
         document.getElementById('login').style.display = 'none';
         document.getElementById('panel').style.display = 'block';
-      } else alert('Contraseña incorrecta');
+      } else {
+        alert('Contraseña incorrecta, solo Mati puede entrar');
+      }
     }
   </script>
 </head>
@@ -22,11 +24,12 @@
     </button>
   </div>
 
-  <div id="panel" style="display:none" class="bg-white rounded-3xl shadow-2xl p-16 max-w-4xl">
+  <div id="panel" style="display:none" class="bg-white rounded-3xl shadow-2xl p-16 max-w-5xl mx-6">
     <h1 class="text-6xl font-bold text-purple-800 text-center mb-10">¡BIENVENIDO MATI!</h1>
-    <p class="text-4xl text-center text-gray-700">TODO FUNCIONA</p>
-    <p class="text-5xl text-center mt-12">❤️ NUNCA MÁS 404 ❤️</p>
-    <a href="/" class="block mt-16 text-3xl text-purple-800 text-center hover:underline">← Volver</a>
+    <p class="text-4xl text-center mb-8">Todos los mensajes te llegan al mail al instante.</p>
+    <p class="text-4xl text-center mb-8">Copiás y pegás donde quieras publicar.</p>
+    <p class="text-6xl text-center font-bold text-purple-600">NUNCA MÁS SE ROMPE</p>
+    <a href="/" class="block mt-16 text-3xl text-purple-800 text-center hover:underline">← Volver al inicio</a>
   </div>
 </body>
 </html>
