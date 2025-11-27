@@ -1,41 +1,34 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 export default function PanelAdmin() {
-  const [mensajes, setMensajes] = useState([])
   const navigate = useNavigate()
 
   useEffect(() => {
     if (!localStorage.getItem('admin-lazaro-autenticado')) {
       navigate('/admin')
     }
-
-    // Traemos mensajes del backend
-    fetch('https://lazaro-contactos.onrender.com/api/mensajes')
-      .then(r => r.json())
-      .then(data => setMensajes(data))
-      .catch(() => setMensajes([]))
   }, [navigate])
-
-  const aprobar = async (id, seccion) => {
-    await fetch(`https://lazaro-contactos.onrender.com/api/mensaje/${id}`, {
-      method: 'PATCH',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ seccion })
-    })
-    setMensajes(mensajes.map(m => m.id === id ? { ...m, aprobado: true } : m))
-  }
-
-  const rechazar = async (id) => {
-    if (confirm('¿Rechazar este mensaje?')) {
-      await fetch(`https://lazaro-contactos.onrender.com/api/mensaje/${id}`, { method: 'DELETE' })
-      setMensajes(mensajes.filter(m => m.id !== id))
-    }
-  }
 
   const logout = () => {
     localStorage.removeItem('admin-lazaro-autenticado')
     navigate('/admin')
+  }
+
+  // Mensajes de ejemplo (después los traemos del backend)
+  const mensajes = [
+    { id: 1, nombre: 'Carla', contacto: 'carla@gmail.com', mensaje: 'Quiero contar mi historia con EM desde los 28 años...', fecha: '26/11/2025' },
+    { id: 2, nombre: 'Diego', contacto: '+543414567890', mensaje: 'Gracias por los abrazos del domingo, me cambiaron la vida', fecha: '25/11/2025' }
+  ]
+
+  const aprobar = (id, seccion) => {
+    alert(`Mensaje ${id} aprobado como ${seccion} y publicado`)
+  }
+
+  const rechazar = (id) => {
+    if (confirm('¿Rechazar este mensaje?')) {
+      alert(`Mensaje ${id} rechazado`)
+    }
   }
 
   return (
@@ -61,7 +54,7 @@ export default function PanelAdmin() {
                 <div key={m.id} className="border-4 border-purple-200 rounded-2xl p-8 hover:shadow-2xl transition">
                   <div className="grid md:grid-cols-3 gap-6 mb-6">
                     <p className="text-xl"><strong>Nombre:</strong> {m.nombre}</p>
-                    <p className="text-xl"><strong>Contacto:</strong> {m.email}</p>
+                    <p className="text-xl"><strong>Contacto:</strong> {m.contacto}</p>
                     <p className="text-xl"><strong>Fecha:</strong> {m.fecha}</p>
                   </div>
                   <p className="text-xl bg-purple-50 p-6 rounded-xl mb-8"><strong>Mensaje:</strong> {m.mensaje}</p>
