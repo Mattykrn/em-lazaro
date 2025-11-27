@@ -1,5 +1,16 @@
 {
   "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
+    {
+      "source": "/admin(.*)",
+      "destination": "/admin$1"
+    },
+    {
+      "source": "/admin-panel(.*)",
+      "destination": "/admin-panel$1"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
   ]
 }
