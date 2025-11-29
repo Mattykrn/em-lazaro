@@ -1,18 +1,1 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Admin</title><script src="https://cdn.tailwindcss.com"></script>
-<script>function e(){document.getElementById('p').value==='lazaro2025'?(
-document.getElementById('l').style.display='none',
-document.getElementById('pnl').style.display='block'
-):alert('Nah')};</script></head>
-<body class="bg-purple-900 min-h-screen flex items-center justify-center p-4">
-  <div id="l" class="bg-white p-16 rounded-3xl shadow-2xl text-center">
-    <h1 class="text-6xl font-bold text-purple-800 mb-12">Panel Admin</h1>
-    <input id="p" type="password" placeholder="Contraseña" class="w-full px-8 py-6 border-4 border-purple-400 rounded-2xl text-2xl mb-8">
-    <button onclick="e()" class="bg-purple-700 text-white text-3xl font-bold px-16 py-8 rounded-2xl">Entrar</button>
-  </div>
-  <div id="pnl" style="display:none" class="bg-white rounded-3xl shadow-2xl p-16 max-w-4xl text-center">
-    <h1 class="text-6xl font-bold text-purple-800 mb-10">¡HOLA MATI!</h1>
-    <p class="text-4xl">Todo te llega al mail.</p>
-    <p class="text-4xl mt-8">Copiás → pegás → listo.</p>
-    <p class="text-6xl mt-16">NUNCA MÁS SE ROMPE ♥</p>
-  </div>
-</body></html>
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Admin</title><script src="https://cdn.tailwindcss.com"></script><script>function entrar(){document.getElementById('pass').value==='lazaro2025'? (document.getElementById('login').style.display='none',document.getElementById('panel').style.display='block'):alert('No')}</script></head><body class="bg-purple-900 min-h-screen flex items-center justify-center"><div id="login" class="bg-white p-16 rounded-3xl shadow-2xl text-center"><h1 class="text-6xl font-bold text-purple-800 mb-12">Panel Admin</h1><input id="pass" type="password" class="w-full px-8 py-6 border-4 border-purple-400 rounded-2xl text-2xl mb-8"><button onclick="entrar()" class="bg-purple-700 text-white text-3xl font-bold px-16 py-8 rounded-2xl">Entrar</button></div><div id="panel" style="display:none" class="bg-white rounded-3xl shadow-2xl p-16 text-center"><h1 class="text-6xl font-bold text-purple-800">¡HOLA MATI!</h1><p class="text-4xl mt-8">Todo te llega al mail ♥</p></div></body></html>
