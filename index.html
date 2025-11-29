@@ -3,26 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Grupo Lázaro ♥ Esclerosis Múltiple</title>
+  <title>Grupo Lázaro ♥ Esclerosis Múltiple Santa Fe</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .gradient { background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%); }
+  </style>
 </head>
-<body class="bg-gradient-to-br from-purple-50 to-pink-50 min-h-screen">
-  <div class="max-w-5xl mx-auto p-8 text-center">
-    <h1 class="text-7xl font-bold text-purple-800 mb-8">Grupo Lázaro ♥</h1>
-    <p class="text-3xl text-gray-700 mb-12">Acá nadie está solo. Nunca más.</p>
-    
-    <div class="grid md:grid-cols-2 gap-8 mb-16">
-      <a href="contacto.html" class="bg-purple-700 hover:bg-purple-800 text-white text-3xl font-bold py-12 rounded-3xl shadow-2xl">
-        Dejar mensaje / testimonio
-      </a>
-      <a href="admin.html" class="bg-red-600 hover:bg-red-700 text-white text-3xl font-bold py-12 rounded-3xl shadow-2xl">
-        Panel Admin (solo Mati)
+<body class="bg-gradient-to-br from-purple-50 via-pink-50 to-white min-h-screen">
+
+  <!-- HEADER VIOLETA -->
+  <header class="gradient text-white py-16 shadow-2xl">
+    <div class="max-w-6xl mx-auto text-center px-6">
+      <h1 class="text-6xl md:text-8xl font-bold text-center mb-4">Grupo Lázaro ♥</h1>
+      <p class="text-3xl md:text-4xl text-center">Esclerosis Múltiple Santa Fe</p>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="py-20 text-center px-6">
+    <h2 class="text-5xl md:text-7xl font-bold text-purple-800 mb-10">Acá nadie está solo</h2>
+    <p class="text-2xl md:text-3xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
+      Este espacio es para vos. Para que cuentes tu historia, pidas ayuda o simplemente leas que hay mucha gente que te entiende.
+    </p>
+  </section>
+
+  <!-- SECCIONES CON MAILTO (así te llega todo directo al correo) -->
+  <section class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12 py-16">
+
+    <!-- TESTIMONIO -->
+    <div class="bg-white p-12 rounded-10 rounded-3xl shadow-2xl text-center">
+      <h3 class="text-4xl font-bold text-purple-700 mb-6">Quiero contar mi historia</h3>
+      <p class="text-xl text-gray-600 mb-8">Tu testimonio puede ayudar a mucha gente que recién empieza este camino.</p>
+      <a href="mailto:matii.toorres.06@gmail.com?subject=Quiero%20contar%20mi%20historia%20(Testimonio)&body=Hola%20Mati!%0D%0A%0D%0AMi%20nombre%20es%3A%0D%0AEdad%3A%0D%0ADesde%20cuándo%20tengo%20EM%3A%0D%0AMi%20historia%3A%0D%0A%0D%0AGracias%20por%20todo%20lo%20que%20hacés%20♥" 
+         class="block bg-purple-700 hover:bg-purple-800 text-white text-2xl font-bold py-8 rounded-2xl shadow-lg transform hover:scale-105 transition">
+        Enviar mi testimonio ♥
       </a>
     </div>
 
-    <a href="https://link.mercadopago.com.ar/grupolazaro" target="_blank" class="inline-block bg-green-600 hover:bg-green-700 text-white text-4xl font-bold px-16 py-10 rounded-full">
-      Donar al Grupo Lázaro ♥
-    </a>
-  </div>
+    <!-- APOYO / PALABRAS DE ÁNIMO -->
+    <div class="bg-white p-12 rounded-3xl shadow-2xl text-center">
+      <h3 class="text-4xl font-bold text-pink-700 mb-6">Quiero dejar palabras de apoyo</h3>
+      <p class="text-xl text-gray-600 mb-8">Un “fuerza”, “te entiendo” o “yo también pasé por eso” vale oro.</p>
+      <a href="mailto:matii.toorres.06@gmail.com?subject=Palabras%20de%20apoyo&body=Hola%20Mati!%0D%0A%0D%0AQuiero%20dejar%20este%20mensaje%20para%20los%20demás%3A%0D%0A%0D%0AUn%20abrazo%20enorme%20♥" 
+         class="block bg-pink-700 hover:bg-pink-800 text-white text-2xl font-bold py-8 rounded-2xl shadow-lg transform hover:scale-105 transition">
+        Enviar mensaje de apoyo ♥
+      </a>
+    </div>
+
+    <!-- CONSULTAS / PREGUNTAS -->
+    <div class="bg-white p-12 rounded-3xl shadow-2xl text-center">
+      <h3 class="text-4xl font-bold text-blue-700 mb-6">Tengo una duda o consulta</h3>
+      <p class="text-xl text-gray-600 mb-8">Tratamiento, síntomas, papeles, lo que sea… preguntá sin drama.</p>
+      <a href="mailto:matii.toorres.06@gmail.com?subject=Consulta%20/%20Pregunta&body=Hola%20Mati!%0D%0A%0D%0AMi%20pregunta%20es%3A%0D%0A%0D%0AGracias%20por%20todo%20♥" 
+         class="block bg-blue-700 hover:bg-blue-800 text-white text-2xl font-bold py-8 rounded-2xl shadow-lg transform hover:scale-105 transition">
+        Hacer una consulta ♥
+      </a>
+    </div>
+
+    <!-- CONTACTO GENERAL + DONACIÓN -->
+    <div class="bg-white p-12 rounded-3xl shadow-2xl text-center">
+      <h3 class="text-4xl font-bold text-green-700 mb-6">Contacto general / Donar</h3>
+      <p class="text-xl text-gray-600 mb-6">Alias para donaciones: <strong>matii.n.t.6</strong></p>
+      <p class="text-lg text-gray-500 mb-8">(Cualquier ayuda sirve para seguir ayudando ❤️)</p>
+      <a href="mailto:matii.toorres.06@gmail.com?subject=Contacto%20General%20/%20Donación" 
+         class="block bg-green-700 hover:bg-green-800 text-white text-2xl font-bold py-8 rounded-2xl shadow-lg transform hover:scale-105 transition mb-6">
+        Escribirme por cualquier cosa ♥
+      </a>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-purple-900 text-white py-12 text-center text-xl">
+    <p>© 2025 Grupo Lázaro - Hecho con todo el amor del mundo</p>
+    <p class="mt-4 text-3xl">Por y para nosotros ♥</p>
+  </footer>
 </body>
 </html>
