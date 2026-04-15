@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Usuario - Kiosco Master PRO Premium ++</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        :root {
+            --primary: #6366f1;
+            --success: #22c55e;
+            --danger: #ef4444;
+            --text: #1e293b;
+            --bg: #f8fafc;
+            --card: #ffffff;
+            --border: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        .card {
+            background: var(--card);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+        }
+
+        h2 {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--primary);
+            border-bottom: 2px solid var(--bg);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        h3 {
+            color: var(--text);
+            margin-top: 25px;
+        }
+
+        .step {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .step-num {
+            background: var(--primary);
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+            font-size: 14px;
+        }
+
+        .tip {
+            background: #f0f9ff;
+            border-left: 4px solid #0ea5e9;
+            padding: 15px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+            font-size: 0.95rem;
+        }
+
+        .important {
+            background: #fff1f2;
+            border-left: 4px solid var(--danger);
+            padding: 15px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+            font-size: 0.95rem;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        kbd {
+            background: #e2e8f0;
+            border-radius: 4px;
+            padding: 2px 6px;
+            font-family: monospace;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <i data-lucide="store" style="width: 48px; height: 48px; color: var(--primary)"></i>
+            <h1>Kiosco Master PRO Premium ++</h1>
+            <p>Guía de uso rápido para el éxito de tu negocio</p>
+        </header>
+
+        <div class="card">
+            <h2><i data-lucide="home"></i> 1. El Panel Principal</h2>
+            <div style="background: #f0f9ff; border-left: 4px solid #0ea5e9; padding: 12px 15px; margin-bottom: 20px; border-radius: 0 8px 8px 0; font-size: 0.95rem; font-style: italic; color: #0c4a6e;">
+                📌 <strong>Esto es el Dashboard.</strong> Es tu primer vistazo al negocio. Cada vez que abres el programa, ves todos los números más importantes en un solo lugar.
+            </div>
+            <p>De un vistazo tienes el control total:</p>
+            <ul>
+                <li><strong>Ventas de Hoy:</strong> Cuánta plata entró en el día.</li>
+                <li><strong>Dinero en la Calle:</strong> El total de lo que te deben los de "La Libreta".</li>
+                <li><strong>Gráfico Semanal:</strong> Compara tus ventas del período anterior con hoy.</li>
+                <li><strong>Productos con Stock Bajo:</strong> Qué necesitas reponer urgentemente.</li>
+                <li><strong>Botones de Acceso Rápido:</strong> Para ir directo a hacer una venta, reponer inventario, o ver quién debe.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2><i data-lucide="shopping-cart"></i> 2. Cómo realizar una Venta</h2>
+            <div style="background: #f0f9ff; border-left: 4px solid #0ea5e9; padding: 12px 15px; margin-bottom: 20px; border-radius: 0 8px 8px 0; font-size: 0.95rem; font-style: italic; color: #0c4a6e;">
+                📌 <strong>Esto es el Punto de Venta.</strong> Aquí es donde viendes productos y cobras dinero. Es el corazón de tu negocio.
+            </div>
+            <p>La pantalla de ventas funciona como una caja registradora de supermercado.</p>
+            <div class="step">
+                <div class="step-num">1</div>
+                <div>Busca el producto por nombre o por código de barras en el campo de búsqueda.</div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div>Selecciona el producto desde el panel izquierdo para agregarlo al ticket central.</div>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <div>Usa el teclado numérico a la derecha para definir la cantidad y presiona <kbd>OK</kbd>.</div>
+            </div>
+            <div class="step">
+                <div class="step-num">4</div>
+                <div>Verifica el ticket central con nombre, precio, cantidad y subtotal.</div>
+            </div>
+            <div class="step">
+                <div class="step-num">5</div>
+                <div>Presiona <kbd>F10</kbd> o el botón COBRAR para iniciar el cierre de venta.</div>
+            </div>
+            <div style="margin-left: 43px;">
+                <p>🟢 <strong>Efectivo:</strong> Venta normal con cálculo de vuelto.</p>
+                <p>🔵 <strong>Transferencia Directa:</strong> Muestra alias/CVU y QR para pago sin comisión.</p>
+                <p>📔 <strong>Fiado:</strong> Registra la deuda en la libreta del cliente.</p>
+                <p>🌓 <strong>Mixto:</strong> Combina efectivo y transferencia en una sola operación.</p>
+            </div>
+            <div class="important">
+                El stock no se descuenta hasta que se confirma el pago de transferencia, evitando ventas sin cobro.
+            </div>
+        </div>
+
+        <div class="card">
+            <h2><i data-lucide="barcode"></i> 3. Uso del Escáner</h2>
+            <div style="background: #f0f9ff; border-left: 4px solid #0ea5e9; padding: 12px 15px; margin-bottom: 20px; border-radius: 0 8px 8px 0; font-size: 0.95rem; font-style: italic; color: #0c4a6e;">
+                📌 <strong>El Escáner es tu mejor amigo.</strong> Si tienes uno, las ventas van 3x más rápido. El sistema detecta automáticamente cuando escaneas un código.
+            </div>
+            <p>El escáner está completamente integrado en el punto de venta. Funciona automáticamente detectando cuando escaneas un código:</p>
+            <div class="step">
+                <div class="step-num">1</div>
+                <div>Asegúrate de que el cursor esté en el campo de búsqueda de productos.</div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div>Escanea el código de barras con tu lector. El sistema reconoce automáticamente el escaneo rápido.</div>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <div>El producto se agrega <strong>automáticamente</strong> al carrito con cantidad 1.</div>
+            </div>
+            <div class="step">
+                <div class="step-num">4</div>
+                <div>Si necesitas escanear más unidades del mismo producto, escanea nuevamente y la cantidad aumenta.</div>
+            </div>
+            <div class="tip">
+                <strong>💡 Consejo Rápido:</strong> El escáner optimiza tu flujo. Un trabajador con lector puede procesar <strong>3x más ventas</strong> en el mismo tiempo.
+            </div>
+            <div class="important">
+                <strong>⚠️ Configuración del Lector:</strong> Tu escáner debe estar en modo "Teclado" (HID). Después de escanear, debe presionar Enter automáticamente. Consulta el manual de tu escáner si no está funcionando.
+            </div>
+        </div>
+
+        <div class="card">
+            <h2><i data-lucide="package"></i> 4.5. Gestión del Inventario</h2>
+            <div style="background: #f0f9ff; border-left: 4px solid #0ea5e9; padding: 12px 15px; margin-bottom: 20px; border-radius: 0 8px 8px 0; font-size: 0.95rem; font-style: italic; color: #0c4a6e;">
+                📌 <strong>Esto es tu Almacén Digital.</strong> Aquí registras qué tienes y cuánto. La clave es NO crear productos iguales dos veces.
+            </div>
+            <p>Desde aquí controlas todos tus productos. La clave es <strong>reponer stock sin crear duplicados</strong>:</p>
+            
+            <h3>➕ Agregar un Producto Nuevo</h3>
+            <div class="step">
+                <div class="step-num">1</div>
+                <div>Presiona el botón <kbd>➕ Agregar Producto</kbd>.</div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div>Completa: Nombre, Categoría, Código de Barras (si tiene), Precio y Stock Inicial.</div>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <div>Presiona <kbd>✅ Guardar Producto</kbd>.</div>
+            </div>
+
+            <h3>📦 Reponer Stock de un Producto Existente</h3>
+            <div class="step">
+                <div class="step-num">1</div>
+                <div>Busca el producto en la tabla (puedes filtrar por nombre o código).</div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div>Haz clic en el icono <kbd>✏️</kbd> de ese producto.</div>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <div>En el campo <strong>"➕ Cantidad a Agregar"</strong>, ingresa cuántas unidades recibes (ej: 10, 25, 50).</div>
+            </div>
+            <div class="step">
+                <div class="step-num">4</div>
+                <div>Verás el cálculo automático: <strong>Nuevo stock = Stock Actual + Cantidad Agregada</strong>.</div>
+            </div>
+            <div class="step">
+                <div class="step-num">5</div>
+                <div>Presiona <kbd>✅ Guardar Cambios</kbd>.</div>
+            </div>
+            
+            <div class="important">
+                <strong>❌ NO hagas esto:</strong> Crear un producto nuevo cada vez que recibes stock. Eso llena el inventario de duplicados. <strong>SIEMPRE repone usando el botón ✏️.</strong>
+            </div>
+            <div class="tip">
+                <strong>💡 Atajo:</strong> Si el stock es "Bajo" (< 5 unidades), la fila aparece en rojo para que no olvides reponer.
+            </div>
+
+            <h3>⚡ Carga Rápida por Código de Barras</h3>
+            <p><strong>Esta es tu nueva superpotencia para registrar stock rápidamente.</strong> Perfecto si pasaste un día entero escaneando.</p>
+            
+            <div class="important">
+                <strong>✨ Requisito previo:</strong> Necesitas tener una lista de productos con códigos de barras. Puede ser:
+                <ul style="margin-top: 10px; margin-left: 20px;">
+                    <li>📥 Un archivo CSV que descarges de tu proveedor</li>
+                    <li>📝 Un archivo que armes manualmente (Excel o similar)</li>
+                    <li><strong>📋 Usa el archivo de ejemplo: <code>ejemplo_productos.csv</code></strong> (o copiar/pegar en Excel)</li>
+                </ul>
+                <strong>Formato CSV es:</strong> barcode,nombre,precio,categoria <br/>
+                <strong>Ejemplo:</strong> 7791234567890,Coca Cola 600ml,150,Bebidas
+            </div>
+
+            <h4>Paso 1️⃣: Importar tu lista de productos (OPCIONAL - solo la 1ª vez)</h4>
+            <div class="step">
+                <div class="step-num">1</div>
+                <div>En Inventario, presiona el botón <kbd>📥 Importar CSV</kbd></div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div>Selecciona tu archivo CSV con los productos (barcode, nombre, precio, categoría)</div>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <div>Se cargan todos los productos automáticamente (incluso actualiza si existen)</div>
+            </div>
+            <div class="tip">
+                <strong>💡 Consejo:</strong> Solo necesitas hacer esto una sola vez. Después, todos los códigos están registrados.
+            </div>
+
+            <h4>Paso 2️⃣: Usar Carga Rápida para registrar stock</h4>
+            <div class="step">
+                <div class="step-num">1</div>
+                <div>Presiona en Inventario el botón <kbd>⚡ Carga Rápida</kbd></div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div><strong>Escanea el código de barras</strong> (o escribe el número manualmente)</div>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <div>El sistema autocompleta: ✓ Nombre del producto, ✓ Precio, ✓ Stock actual</div>
+            </div>
+            <div class="step">
+                <div class="step-num">4</div>
+                <div>Ingresa la cantidad de unidades que tenés</div>
+            </div>
+            <div class="step">
+                <div class="step-num">5</div>
+                <div>Presiona <kbd>Enter</kbd> o el botón <kbd>✅ Guardar Stock</kbd></div>
+            </div>
+            <div class="step">
+                <div class="step-num">6</div>
+                <div>➡️ El campo de código se limpia automáticamente. Listo para el siguiente producto.</div>
+            </div>
+
+            <div class="tip">
+                <strong>🚀 Con lector de barras físico:</strong> Una vez que importas los códigos, es supremamente rápido:
+                <ul style="margin-top: 10px; margin-left: 20px;">
+                    <li>Escanea → Tab → Cantidad → Enter</li>
+                    <li>Repetir para cada producto</li>
+                    <li>Potencialmente 100+ productos en 30 minutos</li>
+                </ul>
+            </div>
+
+            <div class="important">
+                <strong>⚠️ Importante:</strong> Si escaneas un código que NO existe en tu base de datos, el sistema avisa: "⚠️ Código no encontrado". En ese caso:
+                <ul style="margin-top: 10px; margin-left: 20px;">
+                    <li>Presiona <kbd>➕ Agregar Producto</kbd> para agregarlo manualmente</li>
+                    <li>O importa un CSV actualizado desde tu proveedor</li>
+                </ul>
+            </div>
+
+            <div style="background: #f0f9ff; padding: 1rem; border-radius: 8px; margin: 1rem 0; border-left: 4px solid #0ea5e9;">
+                <strong>Ejemplo Práctico: Inventario en 1 Hora</strong><br/><br/>
+                <strong>Antes (lo antiguo - 3 horas):</strong><br/>
+                ➕ Agregar → Nombre → Precio → Categoría → Cantidad → Guardar → Repetir 200 veces 😅<br/><br/>
+                <strong>Ahora (Carga Rápida - 45 minutos):</strong><br/>
+                ⚡ Carga Rápida → Escanea → Cantidad → Enter → Repite 200 veces 🚀<br/><br/>
+                <strong>Y si usas lector de barras: 30-40 minutos máximo</strong> (casi lo mismo que contar)
+            </div>
+
+            <h3>🗑️ Eliminar un Producto</h3>
+            <p>Haz clic en el icono 🗑️ de ese producto. Se te pedirá confirmación antes de borrarlo.</p>
+        </div>
+
+        <div class="card">
+            <h2><i data-lucide="book-open"></i> 5. La Libreta (Fiados)</h2>
+            <div style="background: #f0f9ff; border-left: 4px solid #0ea5e9; padding: 12px 15px; margin-bottom: 20px; border-radius: 0 8px 8px 0; font-size: 0.95rem; font-style: italic; color: #0c4a6e;">
+                📌 <strong>Esto es La Libreta Digital.</strong> Es como el cuaderno de deudas, pero en la computadora. Nunca más olvidas quién debe o cuánto.
+            </div>
+            <p>Para gestionar las cuentas de los vecinos:</p>
+            
+            <h3>➕ Agregar un Cliente Nuevo</h3>
+            <div class="step">
+                <div class="step-num">1</div>
+                <div>Presiona el botón <kbd>➕ Agregar Cliente</kbd>.</div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div>Completa: Nombre del cliente, Teléfono (opcional), Dirección (opcional), Deuda Inicial.</div>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <div>Presiona <kbd>✅ Guardar Cliente</kbd>.</div>
+            </div>
+
+            <h3>👁️ Ver Lista de Clientes y estados de pago</h3>
+            <p>La tabla muestra toda la información importante de cada cliente:</p>
+            <ul>
+                <li><strong>Nombre:</strong> Quién es el cliente</li>
+                <li><strong>Teléfono:</strong> Su contacto</li>
+                <li><strong>Deuda Actual:</strong> Cuánto LE FALTA PAGAR (en rojo si debe)</li>
+                <li><strong>Pagado Total:</strong> Cuánto ya pagó en total</li>
+                <li><strong>Estado:</strong> Su situación actual</li>
+            </ul>
+
+            <h3>📊 Los 3 Estados de Pago</h3>
+            <div style="margin-left: 43px;">
+                <p><strong>✅ PAGADO (Verde)</strong> - El cliente pagó todo. Balance = $0</p>
+                <p><strong>🔄 DEUDA PARCIAL (Naranja)</strong> - Tiene deuda pero ya pagó parte. Ej: debía $100, pagó $30, le falta $70</p>
+                <p><strong>💳 SIN PAGAR (Rojo)</strong> - Tiene deuda pero nunca pagó nada</p>
+            </div>
+
+            <h3>💰 Registrar un Pago</h3>
+            <p><strong>⚠️ IMPORTANTE:</strong> El botón "💰 Pago" SOLO aparece si el cliente tiene deuda.</p>
+            <div class="step">
+                <div class="step-num">1</div>
+                <div>Busca el cliente en la tabla.</div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div>Haz clic en el botón <kbd>💰 Pago</kbd>.</div>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <div>Se abre un modal mostrando:
+                    <ul style="margin-top: 10px; margin-left: 20px;">
+                        <li>Nombre del cliente</li>
+                        <li>Deuda Actual (cuánto falta pagar)</li>
+                        <li>Total Pagado (cuánto ya pagó)</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-num">4</div>
+                <div>Ingresa el monto que está pagando (ej: $50).</div>
+            </div>
+            <div class="step">
+                <div class="step-num">5</div>
+                <div>Presiona <kbd>✅ Registrar Pago</kbd>.</div>
+            </div>
+            <div class="tip">
+                <strong>💡 El sistema se encarga de:</strong> Restar del balance, guardar en el historial, actualizar el estado, mostrar el total pagado. ¡Todo automático!
+            </div>
+            <div class="important">
+                <strong>⚠️ NO puedes registrar un pago mayor que la deuda.</strong> Si alguien debe $50 y vos ingresás $100, el sistema lo rechaza.
+            </div>
+
+        <div class="card">
+            <h2><i data-lucide="calculator"></i> 6. Cierre de Caja</h2>
+            <div style="background: #f0f9ff; border-left: 4px solid #0ea5e9; padding: 12px 15px; margin-bottom: 20px; border-radius: 0 8px 8px 0; font-size: 0.95rem; font-style: italic; color: #0c4a6e;">
+                📌 <strong>Esto es tu Conciliación Diaria.</strong> Al cierre del día, verifica aquí el desglose de TODO. Es tu auditoría automática.
+            </div>
+            <p>El cierre de caja es tu herramienta de control más importante. Aquí verificas cada peso que entró:</p>
+            <div class="step">
+                <div class="step-num">1</div>
+                <div>Ve a la pestaña "🧮 Cierre de Caja".</div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div>Verás un <strong>resumen desglosado por método de pago</strong>:</div>
+            </div>
+            <div style="margin-left: 43px;">
+                <p><strong>💵 Efectivo:</strong> El dinero físico que debe estar en tu cajón. Cuéntalo y verifica que coincida.</p>
+                <p><strong>💳 Tarjeta/Débito:</strong> Lo que cobraste con tarjeta. Generalmente aparece después.</p>
+                <p><strong>🏦 Transferencia:</strong> Los pagos por alias/CVU que recibiste.</p>
+                <p><strong>📔 Fiado/Crédito:</strong> Lo que anotaste en "La Libreta" (deudas todavía no cobradas).</p>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <div>Se muestra el <strong>TOTAL GENERAL</strong> sumando todos los métodos.</div>
+            </div>
+            <div class="step">
+                <div class="step-num">4</div>
+                <div>En la tabla de abajo, verás <strong>cada venta registrada</strong> con hora, cliente, método y monto.</div>
+            </div>
+            <div class="step">
+                <div class="step-num">5</div>
+                <div>Presiona "<kbd>✅ Cerrar Sesión</kbd>" para guardar el cierre. Se pedirá confirmación.</div>
+            </div>
+            <div class="tip">
+                <strong>💡 Verificación Rápida:</strong> El efectivo en tu cajón SIEMPRE debe ser igual al total de "💵 Efectivo" mostrado aquí. Si no coincide, revisa las últimas ventas.
+            </div>
+            <div class="important">
+                <strong>⚠️ Importante:</strong> El fiado NO es dinero recibido. Es una promesa de pago. Solo cuenta como dinero cuando el vecino efectivamente paga.
+            </div>
+        </div>
+
+        <div class="card">
+            <h2><i data-lucide="settings"></i> 7. Configuración y Seguridad</h2>
+            <h3>💾 Copia de Seguridad (MUY IMPORTANTE)</h3>
+            <div class="tip">
+                <strong>⚠️ HAZLO CADA SEMANA:</strong> Ve a la sección "Datos" y presiona <strong>"📥 Exportar Todo"</strong>. Guarda ese archivo en un pendrive, Google Drive, o email. Si tu compu falla, con ese archivo recuperas TODO tu negocio en 30 segundos.
+            </div>
+            <div class="step">
+                <div class="step-num">1</div>
+                <div>Abre la pestaña <strong>⚙️ Configuración</strong>.</div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div>Busca la sección <strong>"Datos y Seguridad"</strong> al pie del menú.</div>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <div>Presiona <strong>"📥 Exportar Todo"</strong> (descarga un archivo con todo tu negocio).</div>
+            </div>
+            <div class="step">
+                <div class="step-num">4</div>
+                <div>Guarda ese archivo en: Pendrive / Google Drive / Email o Dropbox.</div>
+            </div>
+            <div class="important">
+                <strong>🔴 PLAN DE EMERGENCIA:</strong> Si tu compu se rompe, cae líquido, o te la roban: Abre Kiosco Master en otra compu y presiona "📤 Importar Datos". Selecciona el archivo que guardaste. ¡Todo tu negocio vuelve en 1 minuto!
+            </div>
+
+            <h3>🏪 Datos de tu Negocio</h3>
+            <p>Estos detalles aparecen en los tickets que imprimes:</p>
+            <div class="step">
+                <div class="step-num">1</div>
+                <div><strong>Nombre del Negocio:</strong> "Mi Kiosco" o "Almacén Don Julio". Aparece en TODOS los tickets.</div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div><strong>Dirección:</strong> "Avenida Siempre Viva 123". Para que los clientes sepan dónde volverte a encontrar.</div>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <div><strong>Teléfono:</strong> Tu número de contacto para pedidos o consultas.</div>
+            </div>
+            <div class="step">
+                <div class="step-num">4</div>
+                <div><strong>Horario de Atención:</strong> "Lun-Sab 8am-10pm / Dom 9am-9pm". Información útil en los tickets.</div>
+            </div>
+
+            <h3>💳 Configurar Mercado Pago (Para Cobrar por Transferencia SIN Comisión)</h3>
+            <p>Esta es la configuración más IMPORTANTE para recibir dinero de transferencias bancarias:</p>
+            <div class="important">
+                <strong>⚠️ Esto es opcional pero RECOMENDADO.</strong> Si los clientes pueden transferir dinero directamente mientras compran, subes ventas y bajás el efectivo que pierden.
+            </div>
+            
+            <h4 style="margin-top: 20px; color: var(--primary);">Paso 1: Obtén tu Alias, CVU y Token</h4>
+            <div class="step">
+                <div class="step-num">1</div>
+                <div><strong>Abre tu cuenta de Mercado Pago:</strong> Ve a <strong>mercadopago.com.ar</strong> e inicia sesión con tu usuario y contraseña.</div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div><strong>Busca tu Alias:</strong> En el menú → "Tu información" → "Alias y CVU". Tu alias es como <strong>@tunombre</strong> (sin espacios).</div>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <div><strong>Busca tu CVU:</strong> Es un número de 22 dígitos que aparece debajo del alias. Ejemplo: <strong>0000003100991234567890</strong> (copiar exacto).</div>
+            </div>
+            <div class="step">
+                <div class="step-num">4</div>
+                <div><strong>Genera tu Token de Acceso:</strong> En el menú → Configuración → Aplicaciones y Integraciones → Apps. Presiona "Crear Aplicación" o busca una existente. Copia el "Access Token".</div>
+            </div>
+            
+            <h4 style="margin-top: 20px; color: var(--primary);">Paso 2: Ingresa los datos en Kiosco Master</h4>
+            <div class="step">
+                <div class="step-num">1</div>
+                <div>En Configuración → Sección <strong>"Mercado Pago"</strong>.</div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div>Completa los campos:
+                    <ul style="margin-top: 10px; margin-left: 20px;">
+                        <li><strong>Alias:</strong> @tunombre (sin espacios)</li>
+                        <li><strong>CVU:</strong> Los 22 dígitos exactos</li>
+                        <li><strong>Access Token:</strong> El código largo que copiaste</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <div>Presiona <strong>Guardar</strong>.</div>
+            </div>
+            
+            <div class="tip">
+                <strong>💡 Después de esto:</strong> Cuando cobres por "Transferencia" en una venta, el cliente verá tu Alias o podrá escanear un QR para pagarte. Todo sin comisión, directo a tu cuenta.
+            </div>
+
+            <h3>📱 Alertas por WhatsApp</h3>
+            <div class="tip">
+                <strong>🔔 Recibe notificaciones en tiempo real:</strong> Stock bajo, cliente con deuda alta, nuevas ventas, cierre de caja.
+            </div>
+            <div class="step">
+                <div class="step-num">1</div>
+                <div><strong>Habilita WhatsApp:</strong> En Configuración → "Alertas por WhatsApp" → Marca la opción <strong>"Activar"</strong>.</div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div><strong>Ingresa tu número:</strong> Con código de país. Ejemplo: <strong>+54 11 1234-5678</strong> (Argentina, ciudad 11, número).</div>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <div><strong>Configura alertas:</strong> Marca qué eventos quieres que te notifiquen:
+                    <ul style="margin-top: 10px; margin-left: 20px;">
+                        <li>✓ Stock bajo en productos</li>
+                        <li>✓ Cliente con deuda alta</li>
+                        <li>✓ Cierre de caja automático</li>
+                        <li>✓ Resumen diario de ventas</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="tip">
+                <strong>💡 Ejemplo:</strong> Guardas que "Aceite" tiene alerta si queda &lt; 3 botellas. Cuando se venda la última, recibes un mensaje WhatsApp: "⚠️ STOCK BAJO: Aceite quedó en 0 unidades. ¡Repone ya!"
+            </div>
+
+            <h3>📔 Límite de Fiado por Cliente</h3>
+            <p>Define cuánto es lo máximo que un cliente puede deber:</p>
+            <div class="step">
+                <div class="step-num">1</div>
+                <div><strong>En Configuración → "Política de Fiado"</strong>, ingresa el máximo. Ejemplo: <strong>$5.000</strong>.</div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div><strong>Si un cliente intenta superar el límite:</strong> El sistema lo avisa: "⚠️ Este cliente ya debe $4.800. Si agrega $300 más, superará su límite. ¿Continuar?"</div>
+            </div>
+            <div class="important">
+                <strong>❌ Recomendación:</strong> Establece un límite prudencial. Sin esto, algunos vecinos se quedan con deudas enormes. Con el límite, evitas esas malas segundas.
+            </div>
+
+            <h3>🌐 Apariencia y Tema</h3>
+            <ul>
+                <li><strong>Modo Oscuro/Claro:</strong> Elige el que menos canse tus ojos. El "Modo Oscuro" es más cómodo para leer de noche.</li>
+                <li><strong>Tamaño de Fuente:</strong> Si tu vista no es la mejor, aumenta el tamaño. Más grande = más legible.</li>
+                <li><strong>Color Primario:</strong> Personaliza el color principal de los botones (por defecto es verde neón, pero puedes cambiar).</li>
+            </ul>
+
+            <h3>� Datos del Negocio</h3>
+            <p>Información que aparece en los tickets que imprimes. Completa una sola vez:</p>
+            <div class="step">
+                <div class="step-num">1</div>
+                <div><strong>Nombre del Negocio:</strong> Ej: "Almacén la Esquina"</div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div><strong>Teléfono:</strong> Tu número de contacto</div>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <div><strong>Dirección:</strong> Dónde los clientes te encuentran</div>
+            </div>
+            <div class="step">
+                <div class="step-num">4</div>
+                <div><strong>Horarios de Atención:</strong> Ej: "Lun-Sab 8:00-20:00, Dom 9:00-13:00"</div>
+            </div>
+
+            <h3>📱 Mercado Pago</h3>
+            <p>Si usas Mercado Pago, guarda tu información aquí para transferencias rápidas:</p>
+            <div class="step">
+                <div class="step-num">1</div>
+                <div><strong>Alias:</strong> Tu alias de Mercado Pago (Ej: "tu.negocio.mp")</div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div><strong>CVU:</strong> 22 dígitos para transferencias bancarias</div>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <div><strong>Token de Acceso:</strong> SI tienes acceso a API de Mercado Pago (avanzado)</div>
+            </div>
+            <div class="tip">
+                <strong>💡 En el POS:</strong> Cuando selecciones "Mercado Pago", aparecerán estos datos para que el cliente pueda transferir fácilmente.
+            </div>
+
+            <h3>💬 WhatsApp Integrado</h3>
+            <p>Recibe alertas automáticas por WhatsApp de eventos importantes:</p>
+            <div class="step">
+                <div class="step-num">1</div>
+                <div><strong>Tu número WhatsApp:</strong> Ingresa un número con código de país (Ej: +54 9 2664 123456)</div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div><strong>El sistema te avisa de:</strong>
+                    <ul style="margin-top: 10px; margin-left: 20px;">
+                        <li>📦 Stock bajo (cuando un producto llega a la cantidad de alerta)</li>
+                        <li>💵 Transferencias recibidas (si integras con tu banco)</li>
+                        <li>⚠️ Cambios importantes (primero lo hacemos juntos)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>🔒 Seguridad y Respaldo</h3>
+            <div class="important">
+                <strong>⚠️ IMPORTANTE:</strong> Si alguien accede a tu compu, puede ver TODO. Por ahora el sistema no tiene contraseña, pero:
+                <ul style="margin-top: 10px; margin-left: 20px;">
+                    <li>✓ Pon una contraseña en Windows (clave del admin)</li>
+                    <li>✓ No dejes la compu sin supervisión</li>
+                    <li>✓ Guarda backups regularmente</li>
+                </ul>
+            </div>
+            
+            <h3>📥 Hacer Respaldo de Datos (Descargar)</h3>
+            <p>Descarga TODO a un archivo JSON que puedes guardar en una USB o Google Drive:</p>
+            <div class="step">
+                <div class="step-num">1</div>
+                <div>En Configuración, ve a la sección <strong>"Seguridad"</strong> → <strong>"Descargar Respaldo"</strong></div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div>Se descarga un archivo llamado <kbd>kiosco_backup_[FECHA].json</kbd></div>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <div>Guárdalo en un lugar seguro. Es tu seguro de vida para los datos.</div>
+            </div>
+            <div class="tip">
+                <strong>💡 Consejo:</strong> Hace un respaldo cada viernes. Si la compu se daña, recuperas todo.
+            </div>
+
+            <h3>📤 Restaurar Datos (Subir Respaldo)</h3>
+            <p>Si cambiaste de compu o reseteaste el sistema, restaura todo desde un respaldo anterior:</p>
+            <div class="step">
+                <div class="step-num">1</div>
+                <div>En Configuración → <strong>"Seguridad"</strong> → <strong>"Cargar Respaldo"</strong></div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div>Elige el archivo <kbd>.json</kbd> que descargaste antes</div>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <div>El sistema te pide confirmación (porque esto reemplaza TODO)</div>
+            </div>
+            <div class="step">
+                <div class="step-num">4</div>
+                <div>Presiona <strong>✅ Confirmar Restauración</strong></div>
+            </div>
+            <div class="important">
+                <strong>⚠️ CUIDADO:</strong> Esto REEMPLAZA todos tus datos actuales. Asegúrate de hacer respaldo antes de restaurar.
+            </div>
+
+            <h3>🚨 Borrar Todo (Zona de Peligro)</h3>
+            <div class="important">
+                <strong>❌ ¡CUIDADO EXTREMO!</strong> Esta opción NO se puede deshacer. Es como apretar el botón de Reset total.
+            </div>
+            <div class="step">
+                <div class="step-num">1</div>
+                <div>Ve a Configuración → <strong>"Zona de Peligro"</strong> → <strong>"Borrar Todo"</strong></div>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div>El sistema te pide que escribas <kbd>CONFIRMO</kbd> para verificar que es en serio</div>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <div>Se borra TODO: productos, clientes, ventas, configuración. La compu queda como nueva.</div>
+            </div>
+            <div class="tip">
+                <strong>💡 Cuándo usar:</strong> Solo si necesitas empezar de cero o vas a vender el negocio y no quieres que vea los datos.
+            </div>
+
+            <h3>ℹ️ Información del Sistema</h3>
+            <p>Aquí ves estadísticas resumidas:</p>
+            <ul>
+                <li><strong>Versión:</strong> Qué versión de Kiosco Master tienes (para saber si hay updates)</li>
+                <li><strong>Cantidad de Productos:</strong> Cuántos artículos tienes en inventario</li>
+                <li><strong>Cantidad de Clientes:</strong> Cuántos registrados en el sistema</li>
+                <li><strong>Cantidad de Ventas:</strong> Cuántas transacciones hiciste en total</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            Kiosco Master Premium &copy; 2025 - Gestión Inteligente para tu Negocio
+        </div>
+    </div>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

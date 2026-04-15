@@ -1,0 +1,16 @@
+barcode,nombre,precio,categoria
+7791234567890,Coca Cola 600ml,150,Bebidas
+7791234567891,Fanta Naranja 600ml,140,Bebidas
+7791234567892,Sprite 600ml,140,Bebidas
+5901234567012,Leche Entera 1L,180,Lácteos
+5901234567013,Queso Cheddar 200g,320,Lácteos
+5901234567014,Manteca Azul 200g,280,Lácteos
+9876543210001,Pan francés,80,Panificados
+9876543210002,Pan de almendra,120,Panificados
+9876543210003,Medialunas x6,150,Panificados
+1111111111111,Fideos Moño 500g,45,Secos
+1111111111112,Arroz blanco 1kg,85,Secos
+1111111111113,Harina 000 1kg,65,Secos
+2222222222222,Aceite girasol 1L,280,Despensa
+2222222222223,Sal fina 1kg,25,Despensa
+2222222222224,Azúcar 1kg,95,Despensa
