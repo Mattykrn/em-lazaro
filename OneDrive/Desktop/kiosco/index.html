@@ -747,10 +747,17 @@
                     }
 
                     window.showToast(`✅ Stock de "${quickLoadMatched.name}" actualizado: +${quantity} unidades`, 'success');
+                    
+                    // Limpia automáticamente y vuelve a enfocarse en código para siguiente producto
                     setQuickLoadBarcode('');
                     setQuickLoadQuantity('');
                     setQuickLoadMatched(null);
                     window.dispatchEvent(new CustomEvent('storeUpdate'));
+                    
+                    // Enfoca nuevamente el campo de código para escanear el siguiente
+                    setTimeout(() => {
+                        document.querySelector('input[placeholder="Escanea o escribe el código..."]')?.focus();
+                    }, 100);
                 } catch (err) {
                     console.error('Error en carga rápida:', err);
                     window.showToast('Error al actualizar stock', 'error');
